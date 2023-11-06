@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* h1 {
+   font-family: 'Poppins', sans-serif;
+}
+
+.par-text {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.header > p {
+    color: rgb(146, 105, 0);
+}
+
+.header p {
+    border: 1px solid rgb(146, 105, 0);
+}
+
+.paragraph, .diff-paragraph {
+    display: inline;
+}
+
+.paragraph {
+    background-color: cadetblue;
+}
+
+.diff-paragraph {
+    background-color: antiquewhite;
+} */
+
+.diff-paragraph {
+  /* display: inline-block;
+    background-color: burlywood;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    padding: 10px; */
+
+  /* padding: 10px;
+    margin: 20px;
+    height: 200px;
+    width: 300px; */
+}
+
+/* !Navbar */
+
+/* a {
+  text-decoration: none;
+}
+
+.header {
+  color: #fff;
+}
+
+.header p {
+  width: 100%;
+  background-color: #343434;
+  padding: 15px;
+  text-align: center;
+}
+
+.header p a {
+  color: rgb(185, 133, 233);
+}
+
+.header p a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  background-color: #1b1b1b;
+  padding: 20px;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header ul {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul li:not(:first-child) {
+  margin-left: 10px;
+}
+
+nav a {
+  color: #fff;
+} */
+
+/* !Background properties */
+/* 
+.main {
+  width: 800px;
+  background-color: rgba(180, 180, 180, 0.5);
+  height: 400px;
+
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+
+  color: darkseagreen;
+  background-blend-mode: multiply;
+} */
+
+/* ! img size */
+
+/* .img-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+} */
+
+/* !Input styles */
+
+/* label {
+  display: block;
+  margin-bottom: 10px;
+  color: brown;
+}
+
+input {
+  display: block;
+  color: brown;
+  border: 1px solid brown;
+  border-radius: 8px;
+  padding: 5px;
+
+  outline: none;
+}
+
+input::placeholder {
+  color: brown;
+  opacity: 0.5;
+}
+
+button[type="submit"] {
+  color: brown;
+  background-color: goldenrod;
+  border: 1px solid goldenrod;
+  border-radius: 3px;
+  padding: 5px 2px;
+  cursor: pointer;
+} */
