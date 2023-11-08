@@ -1,0 +1,182 @@
+/* @font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 800;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ? CSS Units: px, em, rem, vh, vw */
+
+/* p {
+  margin: 20px 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+p.first {
+  font-size: 20px;
+}
+
+.par-div {
+  font-size: 16px;
+}
+
+p.second {
+  font-size: 2rem;
+}
+
+p.third {
+  font-size: 2em; 
+} */
+
+/* ! vh, vw */
+
+/* .par-div {
+    background-color: bisque;
+    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+} */
+
+/* ? Gradient colors: linear-gradient, radial-gradient */
+
+.box {
+  width: 300px;
+  height: 300px;
+
+  /** Linear gradient*/
+  /* background-color: blue;
+    background-image: linear-gradient( 45deg, blue, green, yellow); */
+
+  /* background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  ); */
+
+  /** Radial gradient*/
+  /* background-color: blue;
+  background-image: radial-gradient(at left bottom, blue, green, yellow); */
+
+  /* background: rgb(131, 58, 180);
+  background: radial-gradient(
+    circle,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  ); */
+
+  /* background: #8ad96e;
+  background: radial-gradient(at center bottom, #8ad96e, #c5b1aa); */
+}
+
+/* ? CSS positions: static, relative, absolute, sticky, fixed */
+
+/* p {
+  font-size: 6rem;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ddd;
+  display: inline-block;
+}
+
+.box.first {
+  background-color: brown;
+  position: sticky;
+  bottom: 0;
+}
+
+.box-container .box:nth-child(1) {
+  background-color: burlywood;
+  position: fixed;
+  top: 0;
+  left: 50%;
+}
+
+.box-container .box:nth-child(2) {
+  background-color: cadetblue;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+.box-container .box:nth-child(3) {
+  background-color: rgb(0, 82, 85);
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+/* ? Pseudo class ve pseudo elementler */
+
+/* ! Pseudo elements: ::after , ::before */
+/* .menu {
+  width: 70px;
+  height: 10px;
+  background-color: cadetblue;
+  position: relative;
+}
+
+.menu::before {
+  content: "";
+  width: 70px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  background-color: coral;
+}
+
+.menu::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 10px;
+  position: absolute;
+  background-color: cornflowerblue;
+  top: 30px;
+} */
+
+/* ! Pseudo class examples */
+
+a {
+  display: block;
+  color: crimson;
+}
+
+a:visited {
+  color: darkorange;
+}
+
+a:active {
+  color: chartreuse;
+}
+
+a:hover {
+  color: darkcyan;
+}
+
+.box {
+  background-color: burlywood;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: aquamarine;
+}
