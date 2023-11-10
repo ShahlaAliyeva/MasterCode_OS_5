@@ -43,3 +43,23 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* !Sibling Selectors 
+? ~ General Sibling
+? + Adjacent Sibling --> derhal yanindaki elemente tesir edir
+*/
+
+/* article ~ span {
+    background-color: black;
+    color: #fff
+} */
+/* 
+p span {
+  background-color: rgb(78, 1, 1);
+  color: #fff;
+} */
+
+p + span {
+  background-color: rgb(16, 1, 78);
+  color: #fff;
+}
