@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: darkcyan;
+  height: 100vh;
+}
+
+.section-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-container div,
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: blueviolet;
+}
+
+.section-container div:first-child {
+  float: left;
+}
+
+.section-container div:last-child {
+  float: right;
+}
+
+/* !main */
+
+main {
+  background-color: antiquewhite;
+  position: relative;
+  height: 100vh;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
