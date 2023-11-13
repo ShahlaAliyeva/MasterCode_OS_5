@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* !Flexbox :
+?justify-content => x oxu uzre nizmlayir
+?align-items => y oxu uzre nizamlayir
+?align-content => y oxu uzre nizamlama (wrap olunduqda)
+?flex-wrap
+?flex-direction => istiqameti
+?flex-grow => boyukluk
+?flex-shrink => kicilme sureti
+?gap => bosluq
+?align-self => elementin ozunu nizamlamaga calisiriq
+?order
+?flex-flow => direction + wrap
+*/
+
+.container {
+  width: 80%;
+  height: 600px;
+  background-color: beige;
+  border: 4px solid rgb(128, 87, 0);
+  display: flex;
+
+  justify-content: center;
+  /* align-items: center; */
+
+  /* flex-wrap: wrap; */
+  /* align-content: center; */
+
+  /* gap: 10px; */
+  /* column-gap: 10px;
+  row-gap: 20px; */
+
+  /* flex-direction: column; */
+  /* flex-flow: row wrap; */
+}
+
+.box {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  display: flex;
+  font-weight: 600;
+}
+
+.box:nth-child(1) {
+  width: 150px;
+  height: 150px;
+  background-color: cadetblue;
+  /* flex-grow: 2; */
+  flex-shrink: 1;
+  order: 2;
+}
+
+.box:nth-child(2) {
+  width: 250px;
+  height: 300px;
+  background-color: rgb(146, 95, 160);
+  /* flex-grow: 2; */
+  flex-shrink: 3;
+  order: 3;
+  align-self: self-end;
+}
+
+.box:nth-child(3) {
+  width: 200px;
+  height: 250px;
+  background-color: rgb(160, 159, 95);
+  /* flex-grow: 2; */
+  flex-shrink: 2;
+  order: 1;
+}
+
+/* .box:nth-child(4) {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(160, 101, 95);
+} */
+
+/* 
+.differ {
+    align-items: self-end;
+} */
+
+/* .btn-container {
+  width: 20%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: burlywood;
+} */
