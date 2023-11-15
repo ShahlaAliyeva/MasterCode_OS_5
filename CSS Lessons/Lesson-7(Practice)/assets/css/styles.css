@@ -79,13 +79,16 @@ a {
 
 .main {
   height: 100%;
-  background: var(--bg-color) url(../images/blob.svg);
+  background-color: var(--bg-color);
+  background-image: url(../images/blob.svg);
+  background-repeat: no-repeat;
   background-size: cover;
-  padding: 7.5rem 0 3rem;
+  padding: 8rem 0 3rem;
 }
 
 .main-container {
   display: flex;
+  align-items: center;
 }
 
 .main-content {
@@ -97,4 +100,9 @@ a {
 
 .main-content h1 {
   font-size: 3.625rem;
+}
+
+.main-img-container {
+  width: 29.4375rem;
+  height: 36.4375rem;
 }
