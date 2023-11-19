@@ -1,0 +1,116 @@
+.btn {
+  width: 150px;
+  height: 50px;
+  font-weight: 700;
+  border: 1px solid #f2f2;
+  background-color: rgba(87, 0, 87, 0.133);
+
+  /* transition-property: all;
+  transition-duration: 3s;
+  transition-delay: 2s;
+  transition-timing-function: linear; */
+
+  /* transition: all 3s cubic-bezier(0,1.04,1,.01); */
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: darkslategray;
+  border: 1px solid darkslategray;
+  color: #fff;
+}
+
+/* Transform 
+scale() => olcunu deyisir
+translate() => x, y oxu uzre hereket etdirir
+rotate() => firlatmaq ucun 
+*/
+
+.transformed-div {
+  width: 200px;
+  height: 200px;
+  background-color: burlywood;
+  cursor: pointer;
+  transition: transform 2s ease-in-out;
+  margin: 100px auto;
+}
+
+.transformed-div:hover {
+  /* transform: scale(2, 0.5); */
+  /* transform: translateX(100%); */
+  /* transform: rotate(45deg); */
+}
+
+/* Transformed btn */
+
+.transformed-btn {
+  width: 150px;
+  height: 50px;
+  font-weight: 700;
+  border: 3px solid #f2f2;
+  background-color: rgba(87, 0, 87, 0.133);
+  position: relative;
+  overflow: hidden;
+}
+
+.transformed-btn:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.transformed-btn::before {
+  content: "";
+  width: 145px;
+  height: 45px;
+  background-color: darkslategray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1000ms ease-in-out;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  z-index: -1;
+}
+
+.transformed-btn:hover::before {
+  transform: rotate(0);
+}
+
+/* Overflow */
+
+p {
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Animations */
+
+.animated-div {
+  width: 200px;
+  height: 200px;
+  background-color: cornflowerblue;
+  transition: transform 1s ease-in-out;
+  cursor: pointer;
+
+  animation-name: moveDiv;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveDiv {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(600px);
+  }
+  75% {
+    transform: translate(600px) rotate(90deg);
+  }
+  100% {
+    transform: translate(600px, 400px) rotate(360deg);
+  }
+}
