@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  background-color: coral;
+}
+
+.container {
+  height: 25rem;
+  background-color: darkcyan;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .box {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(250, 216, 130);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.container .box:hover {
+  cursor: pointer;
+  background-color: rgb(75, 61, 26);
+}
+
+@media (max-width: 576px) {
+  .container {
+    flex-wrap: wrap;
+    background-color: rgb(203, 241, 255);
+  }
+}
+button.btn {
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.7rem;
+  background-color: rgb(203, 241, 255);
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+}
+button.btn:hover {
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: rgb(61, 61, 230);
+  color: #fff;
+}
+.btn.btn-primary:hover {
+  background-color: rgb(194, 194, 232);
+  color: #000;
+}
+
+.btn.btn-secondary {
+  background-color: rgb(83, 83, 83);
+  color: #fff;
+}
+.btn.btn-secondary:hover {
+  background-color: rgb(177, 177, 177);
+  color: #000;
+}/*# sourceMappingURL=style.css.map */

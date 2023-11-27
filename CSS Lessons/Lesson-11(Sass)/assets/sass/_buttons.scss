@@ -1,0 +1,33 @@
+button.btn {
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.7rem;
+  background-color: map-get($buttons, "--btn-bg");
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn.btn-primary {
+  background-color: map-get($buttons, "--btn-primary-bg");
+  color: map-get($buttons, "--white-txt");
+
+  &:hover {
+    background-color: map-get($buttons, "--btn-primary-hover-bg");
+    color: map-get($buttons, "--dark-txt");
+  }
+}
+
+.btn.btn-secondary {
+  background-color: map-get($buttons, "--btn-secondary-bg");
+  color: map-get($buttons, "--white-txt");
+
+  &:hover {
+    background-color: map-get($buttons, "--btn-secondary-hover-bg");
+    color: map-get($buttons, "--dark-txt");
+  }
+}

@@ -1,0 +1,15 @@
+$buttons: (
+  "--btn-bg": rgb(203, 241, 255),
+  "--btn-primary-bg": rgb(61, 61, 230),
+  "--btn-primary-hover-bg": rgb(194, 194, 232),
+  "--btn-secondary-bg": rgb(83, 83, 83),
+  "--btn-secondary-hover-bg": rgb(177, 177, 177),
+  "--white-txt": #fff,
+  "--dark-txt": #000,
+);
+
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+);
