@@ -1,0 +1,39 @@
+@import "./reset.css";
+
+.main_container {
+  background-color: bisque;
+}
+
+.btn {
+    padding: .5rem .7rem;
+    border-radius: .2rem;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: all .3s ease-in;
+}
+
+.btn.btn-primary  {
+    background-color: #0D6EFD;
+}
+
+.btn.btn-primary:hover {
+    background-color: #2564c3;
+}
+
+
+.btn.btn-secondary  {
+    background-color: #5C636A;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #3c4249;
+}
+
+.btn.btn-success  {
+    background-color: #198754;
+}
+
+.btn.btn-success:hover {
+    background-color: #105f3a;
+}

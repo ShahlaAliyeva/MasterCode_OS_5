@@ -1,0 +1,19 @@
+.layers-icon {
+  color: cadetblue;
+  font-size: 2rem;
+}
+
+.text-ellipsis {
+  width: 200px;
+  background-color: cornsilk;
+  border: 2px solid #000;
+  padding: 0.5rem;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+:root {
+  --color: #000;
+}
