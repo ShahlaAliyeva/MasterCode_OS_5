@@ -179,7 +179,7 @@ function sumNumbers(str) {
   return sum;
 }
 
-// ! Home tasks 
+// ! Home tasks
 
 // !String (metodlardan istifadeye icaze var)
 //? 5.
@@ -187,6 +187,40 @@ function sumNumbers(str) {
  * Funksiya 1 eded string qebul etmeli ve verilen cumledeki sozlerden (reqemler arraya elave olunmamalidir) ibaret array qaytarmalidir
  */
 
+function getWords(text) {
+  let wordsArray = [];
+  text = text.trim();
+  let currentWord = "";
+
+  for (let i = 0; i < text.length; i++) {
+    let char = text[i];
+    let currentCharCode = text.charCodeAt(i);
+
+    // console.log(char);
+    if (
+      (currentCharCode >= 65 && currentCharCode <= 90) ||
+      (currentCharCode >= 97 && currentCharCode <= 122) ||
+      currentCharCode === 32
+    ) {
+      if (char !== " ") {
+        currentWord += char;
+      } else {
+        if (currentWord) {
+          wordsArray.push(currentWord);
+        }
+        currentWord = "";
+      }
+    }
+  }
+
+  if (currentWord !== "") {
+    wordsArray.push(currentWord);
+  }
+
+  return wordsArray;
+}
+
+console.log(getWords("some example3456 ? , text2 cfvbn"));
 //? 6.
 /*
  * Funksiya 1 eded string qebul etmeli ve verilen metnde en cox istifade olunan sozu qaytarmalidir
@@ -204,6 +238,22 @@ function sumNumbers(str) {
 /* 4.
  * verilmiş ixtiyari n ədədli massivi maksimumdan minimuma doğru sıralayan funksiya yazın
  */
+
+function sortArray(arr) {
+  for (let j = 0; j < arr.length; j++) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i - 1] > arr[i]) {
+        let temp = arr[i - 1]; // 4
+        arr[i - 1] = arr[i]; // arr[0] = arr[1] => 2
+        arr[i] = temp; // arr[1] = 4 [2, 4, 6, 1, 3]
+      }
+    }
+  }
+
+  return arr;
+}
+
+console.log(sortArray([4, 2, 6, 1, 3]));
 
 /* 5.
  * verilmiş ixtiyari n ədədli massivi minimumdan maksimuma doğru sıralayan funksiya yazın
