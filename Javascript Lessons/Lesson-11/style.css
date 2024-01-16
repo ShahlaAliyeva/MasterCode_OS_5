@@ -1,0 +1,17 @@
+.box {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background-color: rgb(218, 151, 151);
+  border: 1px solid black;
+}
+
+/* .box:nth-child(2):hover .container {
+  background-color: cadetblue;
+} */
+
+.box.activeBox {
+  border: 3px solid rgb(218, 151, 151);
+  background-color: #000;
+  color: #ccc;
+}
