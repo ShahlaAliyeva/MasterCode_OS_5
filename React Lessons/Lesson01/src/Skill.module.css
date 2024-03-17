@@ -1,0 +1,12 @@
+.skill {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  display: flex;
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.5rem;
+
+  background-color: dimgrey;
+  color: #fff;
+}

@@ -1,4 +1,10 @@
-function Card() {
+import CardSkill from "./CardSkill";
+import PropTypes from "prop-types";
+
+
+// const arr = ["HTML", "CSS", "JSON", "jQuery", "React"];
+
+function Card({ title, description, skills }) {
   return (
     <div className="card__container">
       <div className="img__container">
@@ -9,25 +15,23 @@ function Card() {
       </div>
 
       <div className="content__container">
-        <h1 className="card__title">Shehla Eliyeva</h1>
-        <p className="card__content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eaque
-          aliquam illum ipsum nostrum sint architecto voluptas eum quam facilis.
-        </p>
+        <h1 className="card__title">{title}</h1>
+        <p className="card__content">{description}</p>
         <ul className="skills__container">
-          <li className="skill">
-            <span>HTML</span>
-          </li>
-          <li className="skill">
-            <span>CSS</span>
-          </li>
-          <li className="skill">
-            <span>JS</span>
-          </li>
+          {skills?.map((skill, index) => (
+            <CardSkill programmingLang={skill} key={index} />
+          ))}
         </ul>
       </div>
     </div>
   );
 }
+
+Card.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  skills: PropTypes.array,
+  // styles: PropTypes.object,
+};
 
 export default Card;
