@@ -8,7 +8,6 @@ import Card from "./Card";
 //   cursor: "pointer",
 //   backgroundColor: "#ccc",
 // };
-
 function App() {
   return (
     <div className="container">
