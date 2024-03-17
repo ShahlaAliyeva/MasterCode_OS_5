@@ -1,7 +1,6 @@
 import CardSkill from "./CardSkill";
 import PropTypes from "prop-types";
 
-
 // const arr = ["HTML", "CSS", "JSON", "jQuery", "React"];
 
 function Card({ title, description, skills }) {
