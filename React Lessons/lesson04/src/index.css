@@ -1,0 +1,16 @@
+.container {
+  width: 90%;
+  margin: 1rem auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  width: 20%;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
